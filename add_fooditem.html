@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add FoodItem </title>
+    <link  href="../admin_styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header"></div>
+        <div class="main">
+            <div class="container">
+                
+                <!-- form tag used for accepting the data -->
+                <form action="">
+                    <h1>Add FoodItem</h1>
+                    <hr>
+                    <!-- table is used for structure -->
+                    <table>
+                        <tr>
+                            <td colspan="2"><h3>FoodItem Information</h3></td>
+                        </tr>
+                            
+                        <tr>
+                            <td><label for="fooditem-name">FoodItem Name:</label></td>
+                            <td><input type="text" id="fooditem-name" name="fooditem-name"/></td>
+                        </tr>
+                    
+                        <tr>
+                            <td><label for="fooditem-description">FoodItem Discription:</label></td>
+                            <td><textarea id="fooditem-description" name="fooditem-description" rows="5" cols="30"> </textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="is_avaiable">Avaiable?</label></td>
+                            <td><input type="checkbox" id="is_avaiable" name="is_avaiable" required></td>
+                        </tr>
+                            
+                        <tr>
+                            <td><label for="is-vegetarian">Vegetarian?</label></td>
+                            <td><input type="checkbox" id="is-vegetarian" name="is-vegetarian" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="cuisine-category">Category:</label></td>
+                            <td><select name="cuisine-category" id="cuisine-category">
+                                <option value="pasta">Pasta</option>
+                                <option value="pizza">Pizza</option>
+                                <option value="sandwich">Sandwich</option>
+                                <option value="soup">Soup</option>
+                                </select></td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label for="cuisine-type">Cuisine:</label></td>
+                            <td><select name="cuisine-type" id="cuisine-type">
+                                <option value="italian">Italian</option>
+                                <option value="asian">Asian</option>
+                                <option value="chinese">Chinese</option>
+                            </select></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="fooditem-image-url">Image URL:</label></td>
+                            <td><input type="url" id="fooditem-image-url" name="fooditem-image-url"></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="button" id="discard-button">Discard</button></td>
+                            <td><button type="submit" id="save-button">Save</button></td>
+                        </tr>
+                            
+                    </table>    
+                </form>  
+             </div>
+        </div>      
+</body>
+</html>

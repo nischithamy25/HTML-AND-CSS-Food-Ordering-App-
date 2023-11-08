@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Category </title>
+    <link  href="../admin_styles/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="header"></div>
+        <div class="main">
+            <div class="container">
+    
+                <!-- form tag used for accepting the data -->
+                <form action="">
+                    <h1>Add Category</h1>
+                    <hr>
+                        <!-- table is used for structure -->
+                        <table>
+
+                            <tr>                        
+                                <td><label for="cg_name">Category Name:</label></td>
+                                <td><input type="text" id="cg_name" name="cg_name"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="cg_description">Category Discription:</label></td>
+                                <td><textarea id="cg_description" name="cg_description" rows="5" cols="30"> </textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="cg_dropdown">Is Active</label></td>
+                                <td><input type="checkbox" name="cg_dropdown" id="cg_dropdown" /></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="cg_image_url">Image URL:</label></td>
+                                <td><input type="url" id="cg_image_url" name="cd_image_url"></td>
+                            </tr>
+
+                            <tr>
+                                <td><button type="button" id="discard-button">Discard</button></td>
+                                <td><button type="submit" id="save-button">Save</button></td>
+                            </tr>
+
+                        </table>
+
+                    </form>
+            </div>
+        </div> 
+</body>
+</html>

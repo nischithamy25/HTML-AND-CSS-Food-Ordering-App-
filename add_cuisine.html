@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cuisine </title>
+    <link  href="../admin_styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header"></div>
+        <div class="main">
+            <div class="container">
+    
+                <!-- form tag used for accepting the data -->
+                <form action="">
+                    <h1>Add Cuisine</h1>
+                    <hr>
+                    <!-- table is used for structure -->
+                    <table>
+                        <tr>
+                            <td><label for="cuisine_name">Cuisine Name:</label></td>
+                            <td><input type="text" id="name" name="name"/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="cuisine_description">Cuisine Discription:</label></td>
+                            <td><textarea id="cuisine_description" name="cuisine_description" rows="5" cols="30"> </textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="cuisine_image_url">Image URL:</label></td>
+                            <td><input type="url" id="cuisine_image_url" name="cuisine_image_url"><br/></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="cuisine_is_active">Is Active</label></td>
+                            <td><input type="checkbox" id="cuisine_is_active" name="cuisine_is_active" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="button" id="discard-button">Discard</button></td>
+                            <td><button type="submit" id="save-button">Save</button></td>
+                        </tr>
+            
+                
+                    </table>
+                </form>
+            </div>
+        </div> 
+</body>
+</html>
